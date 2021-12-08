@@ -1,0 +1,51 @@
+[
+    {
+        "producto": "Campestre",
+        "precio": "$700"
+    },
+    {
+        "producto": "Criolla",
+        "precio": "$700"
+    },
+    {
+        "producto": "Súper Bocado",
+        "precio": "$700"
+    },
+    {
+        "producto": "Bacon Especial",
+        "precio": "$700"
+    },
+    {
+        "producto": "Coca Cola 2l",
+        "precio": "$700"
+    },
+    {
+        "producto": "Coca Cola 500ml",
+        "precio": "$700"
+    },
+    {
+        "producto": "Sprite 2l",
+        "precio": "$700"
+    },
+    {
+        "producto": "Sprite 500ml",
+        "precio": "$700"
+    },
+    {
+        "producto": "Papas fritas",
+        "precio": "$700"
+    },
+    {
+        "producto": "Aros de Cebolla",
+        "precio": "$700"
+    },
+    {
+        "producto": "Papas con cheddar",
+        "precio": "$700"
+    },
+    {
+        "producto": "Papas fritas con bacon",
+        "precio": "$700"
+    }
+
+]
