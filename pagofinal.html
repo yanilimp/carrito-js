@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/final-compra.css">
+    <link rel="shortcut icon" href="./imagenes/logo-1@4x-8.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Open+Sans+Condensed:ital,wght@0,300;0,700;1,300&display=swap"
+        rel="stylesheet">
+
+
+
+
+    <title>Finalizar Compra</title>
+</head>
+
+<body>
+    <header class="container-fluid bg-dark position-sticky top-0">
+
+        <nav class="navbar navbar-expand-lg navbar-dark info-color">
+
+            <div class="container">
+
+                <!-- Collapse button -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
+                    aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="basicExampleNav">
+                    <ul class="nav nav-pills mb-3 py-3 container" id="pills-tab" role="tablist">
+                        <li class="nav-item text-primary" role="presentation">
+                            <a href="./index.html" class="nav-link " id="pills-home-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
+                                aria-selected="true">Inicio</a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a href="./index.html" class="nav-link" id="pills-profile-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile"
+                                aria-selected="false">Menú</a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a href="./index.html" class="nav-link" id="pills-contact-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact"
+                                aria-selected="false">Carrito</a>
+                        </li>
+                    </ul>
+                </div>
+    </header>
+    <div class="container">
+        <div class="creditCardForm">
+            <div class="heading">
+                <h1>Confirmar Compra</h1>
+            </div>
+            <div class="contenedor">
+
+                <!-- Tarjeta -->
+                <section class="tarjeta" id="tarjeta">
+                    <div class="delantera">
+                        <div class="logo-marca" id="logo-marca">
+                            <!-- <img src="img/logos/visa.png" alt=""> -->
+                        </div>
+                        <img src="./imagenes/chip-tarjeta.png" class="chip" alt="">
+                        <div class="datos">
+                            <div class="grupo" id="numero">
+                                <p class="label">Número Tarjeta</p>
+                                <p class="numero">#### #### #### ####</p>
+                            </div>
+                            <div class="flexbox">
+                                <div class="grupo" id="nombre">
+                                    <p class="label">Nombre Tarjeta</p>
+                                    <p class="nombre">Jhon Doe</p>
+                                </div>
+        
+                                <div class="grupo" id="expiracion">
+                                    <p class="label">Expiracion</p>
+                                    <p class="expiracion"><span class="mes">MM</span> / <span class="year">AA</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="trasera">
+                        <div class="barra-magnetica"></div>
+                        <div class="datos">
+                            <div class="grupo" id="firma">
+                                <p class="label">Firma</p>
+                                <div class="firma"><p></p></div>
+                            </div>
+                            <div class="grupo" id="ccv">
+                                <p class="label">CCV</p>
+                                <p class="ccv"></p>
+                            </div>
+                        </div>
+                        <p class="leyenda">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus exercitationem, voluptates illo.</p>
+                        <a href="#" class="link-banco">www.nombre-banco.com</a>
+                    </div>
+                </section>
+        
+                <!-- Contenedor Boton Abrir Formulario -->
+                <div class="contenedor-btn">
+                    <button class="btn-abrir-formulario" id="btn-abrir-formulario">
+                        <i class="fas fa-plus"></i>
+                    </button>
+                </div>
+        
+                <!-- Formulario -->
+                <form action="" id="formulario-tarjeta" class="formulario-tarjeta">
+                    <div class="grupo">
+                        <label for="inputNumero">Número Tarjeta</label>
+                        <input type="text" id="inputNumero" maxlength="19" autocomplete="off">
+                    </div>
+                    <div class="grupo">
+                        <label for="inputNombre">Nombre</label>
+                        <input type="text" id="inputNombre" maxlength="19" autocomplete="off">
+                    </div>
+                    <div class="flexbox">
+                        <div class="grupo expira">
+                            <label for="selectMes">Expiracion</label>
+                            <div class="flexbox">
+                                <div class="grupo-select">
+                                    <select name="mes" id="selectMes">
+                                        <option disabled selected>Mes</option>
+                                    </select>
+                                    <i class="fas fa-angle-down"></i>
+                                </div>
+                                <div class="grupo-select">
+                                    <select name="year" id="selectYear">
+                                        <option disabled selected>Año</option>
+                                    </select>
+                                    <i class="fas fa-angle-down"></i>
+                                </div>
+                            </div>
+                        </div>
+        
+                        <div class="grupo ccv">
+                            <label for="inputCCV">CCV</label>
+                            <input type="text" id="inputCCV" maxlength="3">
+                        </div>
+                    </div>
+                    <button type="submit" class="btn-enviar alert-success" id="alert-success">Enviar</button>
+                    <div class="alert alert-primary alert-success" role="alert">
+                        <span>Su compra ha sido realizada</span>
+                      </div>
+                </form>
+            </div>
+           
+                     
+        </div>
+
+    </div>
+
+    <br />
+    <br />
+    <!--AJAX SOLO-->
+    <div class="container">
+        <div class="section">
+            <button id="boton-ajax" class="btn bg-dark text-white">OTROS PRODUCTOS</button>
+            <br />
+            <br />
+            <table class="table table-hover">
+                <thead>
+                    <tr class="text-primary">
+                        <th scope="col">Productos</th>
+                        <th scope="col">Precios</th>
+                    </tr>
+                </thead>
+                <tbody id="resp">
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <footer class="page-footer font-small grey lighten-3 py-4 dark-grey-text">
+
+        <!-- Footer Elements -->
+        <div class="container">
+
+            <div class="row">
+                <div class="col-md-4">
+                    <h3 class="font-weight-bold mb-0">Lizbeth Limprich</h3>
+                </div>
+                <div class="col-md-4">
+                    <ul class="list-unstyled d-flex justify-content-center mb-0 mt-2">
+                        <li>
+                            <a class="mx-3" role="button">About</a>
+                        </li>
+                        <li>
+                            <a class="mx-3" role="button">Blog</a>
+                        </li>
+                        <li>
+                            <a class="mx-3" role="button">Policy</a>
+                        </li>
+                        <li>
+                            <a class="mx-3" role="button">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <!-- Copyright -->
+                    <div class="footer-copyright text-right bg-transparent dark-grey-text mt-2">Lizbeth
+                        Limprich
+                        © 2021.
+                        <a class="dark-grey-text" href="#">Lizbeth Limprich</a>
+                    </div>
+                    <!-- Copyright -->
+                </div>
+            </div>
+
+        </div>
+        <!-- Footer Elements -->
+
+    </footer>
+    <!-- Footer -->
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous">
+    </script>
+    <script src="./js/scripts.js"></script>
+    <script src="./js/ajax.js"></script>
+    <script src="./js/compra-final.js"></script>
+</body>
+
+</html>
